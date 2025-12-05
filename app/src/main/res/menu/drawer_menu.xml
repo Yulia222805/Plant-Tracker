@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- Группа с одним выделенным элементом -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/plantsFragment"
+            android:title="Мои растения" />
+        <item
+            android:id="@+id/wateringCalendarFragment"
+            android:title="Календарь полива" />
+        <item
+            android:id="@+id/guideFragment"
+            android:title="Справочник" />
+    </group>
+
+</menu>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--</menu>-->
