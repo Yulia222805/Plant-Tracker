@@ -36,6 +36,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
 }
 
@@ -56,4 +57,16 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    implementation("androidx.compose.material:material-icons-extended:1.6.8")
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+    implementation("androidx.compose.ui:ui-tooling:1.6.8")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+
+    //чтобы строить навигацию с помощью графа навигации
+    // NavHostFragment - добавляет контейнер для навигации фрагментов
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
+
+    // для интеграции компонента навигации с панелью инструментов - норм чувак - нужный
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
 }
