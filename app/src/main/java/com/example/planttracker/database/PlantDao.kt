@@ -1,0 +1,29 @@
+package com.example.planttracker.database
+
+//import androidx.lifecycle.LiveData
+import androidx.room.*
+import kotlinx.coroutines.flow.Flow
+
+@Dao
+interface PlantDao {
+
+    @Query("SELECT * FROM plants ORDER BY name ASC")
+    fun getAllPlants(): Flow<List<Plant>>
+
+    @Query("SELECT * FROM plants WHERE id = :id")
+    suspend fun getPlantById(id: Long): Plant?
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insert(plant: Plant)
+
+    @Update
+    suspend fun update(plant: Plant)
+
+    @Delete
+    suspend fun delete(plant: Plant)
+
+//    @Query("SELECT * FROM plants WHERE lastWatered + wateringIntervalDays * 86400000 <= :currentTime")
+//    fun getPlantsNeedingWater(currentTime: Long): List<Plant>
+    @Query("SELECT * FROM plants WHERE last_watered + watering_interval_days * 86400000 <= :currentTime")
+    fun getPlantsNeedingWater(currentTime: Long): List<Plant>
+}
