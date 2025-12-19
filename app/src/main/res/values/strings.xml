@@ -2,4 +2,70 @@
     <string name="app_name">PlantTracker</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Общие -->
+    <string name="back">Назад</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+
+    <!-- Навигация (Drawer) -->
+    <string name="drawer_my_plants">Мои растения</string>
+    <string name="drawer_watering_calendar">Календарь полива</string>
+    <string name="drawer_guide">Справочник</string>
+    <string name="drawer_settings">Настройки</string>
+
+    <!-- AddEditPlantScreen -->
+    <string name="screen_add_plant_title">Добавить растение</string>
+    <string name="screen_edit_plant_title">Редактировать растение</string>
+
+    <string name="plant_name_label">Название растения</string>
+    <string name="plant_description_label">Описание (опционально)</string>
+    <string name="watering_interval_label">Интервал полива (дней)</string>
+    <string name="fertilizing_interval_label">Интервал удобрения (дней)</string>
+    <string name="last_watered_label">Последний полив</string>
+    <string name="last_fertilized_label">Последнее удобрение</string>
+
+    <string name="error_required_field">Обязательное поле</string>
+    <string name="error_positive_number">Введите число больше 0</string>
+
+    <string name="btn_fill_from_reference">Заполнить из справочника</string>
+    <string name="btn_add_plant_photo">Добавить фото растения</string>
+    <string name="btn_create_plant">Создать растение</string>
+    <string name="btn_save_changes">Сохранить изменения</string>
+    <string name="toast_camera_permission_needed">Нужен доступ к камере</string>
+
+    <string name="cd_select_date">Выбрать дату</string>
+
+
+    <!-- Диалоги -->
+    <string name="dialog_photo_source_title">Выберите источник</string>
+    <string name="dialog_photo_source_gallery">Галерея</string>
+    <string name="dialog_photo_source_camera">Камера</string>
+
+    <string name="dialog_date_picker_title">Выберите дату</string>
+
+    <!-- Content Descriptions (для accessibility) -->
+    <string name="cd_back">Назад</string>
+    <string name="cd_calendar">Выбрать дату</string>
+    <string name="cd_plant_photo">Фото растения</string>
+    <string name="cd_gallery">Галерея</string>
+    <string name="cd_camera">Камера</string>
+    <string name="cd_menu">Меню</string>
+
+    <!-- Уведомления -->
+    <string name="notification_channel_watering_name">Напоминания о поливе</string>
+    <string name="notification_channel_watering_description">Уведомления, когда пора полить растение</string>
+    <string name="notification_watering_title">Пора полить %1$s!</string>
+    <string name="notification_watering_text">Не забудьте полить ваше растение сегодня.</string>
+    <string name="notification_action_watered">Полито</string>
+    <string name="notification_action_dismissed">Прочитано</string>
+
+    <!-- Настройки -->
+    <string name="screen_settings_title">Настройки</string>
+    <string name="settings_notifications_title">Уведомления</string>
+    <string name="settings_notifications_summary">Напоминания о поливе</string>
+    <string name="settings_notifications_enabled">Включить уведомления</string>
+
+    <!-- Разрешения -->
+    <string name="permission_camera_needed">Нужен доступ к камере</string>
 </resources>
